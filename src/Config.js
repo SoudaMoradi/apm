@@ -1,0 +1,1 @@
+export const assetImage=process.env.PUBLIC_URL+'/assets/image/{{IMAGE}}'

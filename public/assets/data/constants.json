@@ -1,0 +1,39 @@
+{
+  "weekDays": [
+    {
+      "id": 1,
+      "name": "SAT",
+      "label": "شنبه"
+    },
+    {
+      "id": 2,
+      "name": "SUN",
+      "label": "یکشنبه"
+    },
+    {
+      "id": 3,
+      "name": "MON",
+      "label": "دوشنبه"
+    },
+    {
+      "id": 4,
+      "name": "TUE",
+      "label": "سه شنبه"
+    },
+    {
+      "id": 5,
+      "name": "WED",
+      "label": "چهارشنبه"
+    },
+    {
+      "id": 6,
+      "name": "THU",
+      "label": "پنجشنبه"
+    },
+    {
+      "id": 7,
+      "name": "FRI",
+      "label": "جمعه"
+    }
+  ]
+}

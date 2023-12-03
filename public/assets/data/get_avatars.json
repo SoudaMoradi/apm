@@ -1,0 +1,46 @@
+[
+  {
+    "url": "assets/image/naghshehbardar.png",
+    "id": 1,
+    "color": "bg-pink-200"
+
+  },
+  {
+    "url": "assets/image/mohandes.png",
+    "id": 2,
+    "color": "bg-pink-200"
+
+
+  },
+  {
+    "url": "assets/image/mobile.png",
+    "id": 3,
+    "color": "bg-pink-100"
+
+  },
+  {
+    "url": "assets/image/house.png",
+    "id": 4,
+    "color": "bg-green-200"
+
+  },
+  {
+    "url": "assets/image/car1.png",
+    "id": 5,
+    "color": "bg-blue-200"
+
+  },
+  {
+    "url": "assets/image/car2.png",
+    "id": 6,
+    "color": "bg-yellow-200"
+
+  },
+  {
+    "url": "assets/image/laptop.png",
+    "id": 7,
+    "color": "bg-red-200"
+
+  }
+
+]

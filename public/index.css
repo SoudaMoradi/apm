@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Shabnam-FD;
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-FD.eot');
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-FD.eot?#iefix') format('embedded-opentype'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-FD.woff') format('woff'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-FD.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam-FD;
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Bold-FD.eot');
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Bold-FD.eot?#iefix') format('embedded-opentype'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Bold-FD.woff') format('woff'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam-FD;
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Light-FD.eot');
+    src: url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Light-FD.eot?#iefix') format('embedded-opentype'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Light-FD.woff') format('woff'), url('./fonts/shabnam-font/Farsi-Digits/Shabnam-Light-FD.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url('./fonts/iran-yekan/IRANYekanWebMedium.eot');
+    src: url('./fonts/iran-yekan/IRANYekanWebMedium.eot?#iefix') format('embedded-opentype'), url('./fonts/iran-yekan/IRANYekanWebMedium.woff') format('woff'), url('./fonts/iran-yekan/IRANYekanWebMedium.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url('./fonts/iran-yekan/IRANYekanWebBold.eot');
+    src: url('./fonts/iran-yekan/IRANYekanWebBold.eot?#iefix') format('embedded-opentype'), url('./fonts/iran-yekan/IRANYekanWebBold.woff') format('woff'), url('./fonts/iran-yekan/IRANYekanWebBold.ttf') format('truetype');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url('./fonts/iran-yekan/IRANYekanWebLight.eot');
+    src: url('./fonts/iran-yekan/IRANYekanWebLight.eot?#iefix') format('embedded-opentype'), url('./fonts/iran-yekan/IRANYekanWebLight.woff') format('woff'), url('./fonts/iran-yekan/IRANYekanWebLight.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body{
+    font-family: Shabnam-FD!important;
+}
+
+.shabnam-font{
+    font-family: Shabnam-FD!important;
+}
+.iran-yekan-font{
+    font-family: IranYekan!important;
+}
+
+.p-component{
+    font-family: Shabnam-FD!important;
+}
