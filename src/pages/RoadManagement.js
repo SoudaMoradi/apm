@@ -54,7 +54,7 @@ function RoadManagement(props) {
                         <span className="text-sm font-medium">پیمانکار:اختر نیروی نقش جهان</span>
                     </div>
                     <div className="flex justify-content-end shadow-none">
-                        <span className="p-button-text p-3 cursor-pointer text-primary-700 text-lg font-medium" onClick={()=>{}} >ورود</span>
+                        <span className="p-button-text p-3 cursor-pointer text-primary-700 text-lg font-medium" >ورود</span>
                     </div>
                 </div>
 
