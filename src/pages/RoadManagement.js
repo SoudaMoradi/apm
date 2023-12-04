@@ -122,7 +122,7 @@ function RoadManagement(props) {
         <div className="flex justify-content-center align-items-center">
             {
                 params.id ?(
-                    <div>{<RoadManageDetail/>}</div>
+                    <RoadManageDetail/>
                 ):(
                     <div className="w-9 flex flex-wrap">
                         {

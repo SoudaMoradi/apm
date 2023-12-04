@@ -1,6 +1,7 @@
 import React from 'react';
 import {Menubar} from "primereact/menubar";
 import {useNavigate, useParams} from "react-router-dom";
+import ListEquipment from "./ListEquipment";
 
 
 function RoadManageDetail ({onClick,label}) {
@@ -30,7 +31,7 @@ function RoadManageDetail ({onClick,label}) {
     ]
 
     const tabContents={
-        listequipment:<div>LIST OF EQUIPMENT</div>,
+        listequipment:<ListEquipment/>,
         map:<div>MAP</div>
     }
 
@@ -53,9 +54,9 @@ function RoadManageDetail ({onClick,label}) {
 
 
     return (
-        <div  className="flex flex-column justify-content-center align-items-center flex-1">
+        <div  className="flex flex-column justify-content-center align-items-center flex-1 w-full">
             <Menubar className="flex justify-content-center w-full text-xs bg-transparent border-none" model={items} start={<MenubarStart/>} end={<MenubarEnd/>}/>
-            <div>
+            <div className="w-full">
                 {
                     tabContents[params.tab]
                 }

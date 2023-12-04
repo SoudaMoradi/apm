@@ -2,36 +2,9 @@ import React, {useState} from 'react';
 import { Accordion, AccordionTab } from 'primereact/accordion';
 
 function ListEquipment(props) {
-
-}
-    export const AccordionDemo = () => {
-
-        const [activeIndex, setActiveIndex] = useState(null);
-
-        const onClick = (itemIndex) => {
-            let _activeIndex = activeIndex ? [...activeIndex] : [];
-
-            if (_activeIndex.length === 0) {
-                _activeIndex.push(itemIndex);
-            }
-            else {
-                const index = _activeIndex.indexOf(itemIndex);
-                if (index === -1) {
-                    _activeIndex.push(itemIndex);
-                }
-                else {
-                    _activeIndex.splice(index, 1);
-                }
-            }
-
-            setActiveIndex(_activeIndex);
-        }
-
-
-
-    return (
-        <div className="accordion-demo">
-            <Accordion activeIndex={0}>
+    return<div className="w-full">
+        <div className="w-full">
+            <Accordion className="w-full">
                 <AccordionTab header="Header I">
                     <p>Lorem ipsum dolor sit amet</p>
                 </AccordionTab>
@@ -44,7 +17,14 @@ function ListEquipment(props) {
             </Accordion>
 
         </div>
-    );
+
+    </div>
+
 }
+
+
+
+
+
 
 export default ListEquipment;
