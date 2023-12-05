@@ -2,7 +2,7 @@ import React from 'react';
 
 function Calendar(props) {
     return (
-        <div>تقویم کاری</div>
+        <div className="flex justify-content-center bg-yellow-300 h-full">تقویم کاری</div>
     );
 }
 

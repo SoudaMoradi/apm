@@ -50,6 +50,20 @@
 
 body{
   background-color:#eff3f8
+}
+.p-menubar .p-menubar-start{
+  margin-left:unset;
+  flex:1 1;
+}
+.p-menubar .p-menubar-end{
+  flex: 1 1;
+}
+.p-menubar-root-list{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 
-
+}
+.p-accordion-content{
+  padding:0;
 }

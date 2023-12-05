@@ -5,7 +5,6 @@ import {Routes,Route} from "react-router-dom";
 import Sidebar from "./Sidebar";
 import RoadManagement from "./pages/RoadManagement";
 import {useState} from "react";
-import ListEquipment from "./pages/ListEquipment";
 
 
 

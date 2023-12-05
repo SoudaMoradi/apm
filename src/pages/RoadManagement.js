@@ -61,7 +61,6 @@ function RoadManagement(props) {
         },
     ]
 
-
     const MyChart=({equipment})=>{
 
         const data = {
@@ -114,12 +113,8 @@ function RoadManagement(props) {
         )
     }
 
-
-
-
-
     return (
-        <div className="flex justify-content-center align-items-center">
+        <div className="flex justify-content-center align-items-center h-full">
             {
                 params.id ?(
                     <RoadManageDetail/>
