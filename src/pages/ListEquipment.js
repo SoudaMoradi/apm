@@ -230,20 +230,13 @@ function ListEquipment(props) {
                                                 header="  شماره سریال "/>
                                         <Column alignHeader={'center'} className="text-center" field="contractor"
                                                 header="پیمانکار نگهداشت"/>
-                                        <Column alignHeader={'center'} className="text-center" field="status"
-                                                header=" وضعیت" body={(item) => {
-                                            return <div><Dropdown className="w-8rem" options={activeation}
-                                                                  value={item.status}/></div>
+                                        <Column alignHeader={'center'} className="text-center" field="status" header=" وضعیت" body={(item) => {return <div><Dropdown className="w-8rem" options={activeation} value={item.status}/></div>
                                         }}/>
                                         <Column alignHeader={'center'} className="text-center" body={(item) => {
                                             return <div><ProgressBar value={item.health}/></div>
                                         }} header=" سلامت"/>
                                         <Column alignHeader={'center'} className="text-center" body={(item) => {
-                                            return <div><Button className="p-button-text text-green-600"
-                                                                label={'مشاهده جزییات'} onClick={() => {
-                                                setShowDialog(true)
-                                            }}/></div>
-                                        }}/>
+                                            return <div><Button className="p-button-text text-green-600" label={'مشاهده جزییات'} onClick={()=>{setShowDialog(true)}}/></div>}}/>
                                     </DataTable>
                                 </div>
                             </AccordionTab>
@@ -253,9 +246,7 @@ function ListEquipment(props) {
 
                 </Accordion>
             </div>
-            <Dialog visible={showDialog} onHide={() => {
-                setShowDialog(false)
-            }} className="w-7 rtl" closable={false} showHeader={false}>
+            <Dialog visible={showDialog} onHide={() => {setShowDialog(false)}} className="w-7 rtl" closable={false} showHeader={false}>
                 <div className="flex h-full">
                     <div className="flex flex-column border-left-2  flex-1">
                         <div className="border-bottom-3 flex flex-column justify-content-center align-items-center">

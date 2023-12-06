@@ -28,9 +28,10 @@ function Sidebar(props) {
         {icon:"pi-chart-bar" ,title:"انبار",isExpanded:true},
         {icon:"pi-cog" ,title:"تنظیمات",isExpanded:true},
         {icon:"pi-plus-circle" ,title:"ثبت تیکت",isExpanded:true},
-        {icon:"pi-users" ,title:"گفتگو",isExpanded:true},
-        {icon:"pi-envelope" ,title:"نامه ها",isExpanded:true},
-        {icon:"pi-question" ,title:"راهنما",isExpanded:true},
+        {icon:"pi-users" ,title:"گفتگو",path:"/conversation",isExpanded:true},
+        {icon:"pi-envelope" ,title:"نامه ها",path:"/letters", isExpanded:true},
+        {icon:"pi-exclamation-circle" ,title:"راهنما",isExpanded:true},
+        {icon:"pi-bell" ,title:"اعلانات",isExpanded:true},
 
     ]
 

@@ -47,14 +47,13 @@ function RoadManageDetail ({onClick,label}) {
 
 
     function MenubarEnd() {
-        return <div className="flex justify-content-end gap-2">
+        return <div className="flex justify-content-end pl-5 gap-2">
             <span className="pi pi-users"/>
-            <span className="pi pi-volume-up"/>
         </div>;
     }
 
     function MenubarStart() {
-        return<div className="flex justify-content-start">
+        return<div className="flex justify-content-start pr-3">
             <span>خوزستان</span>
             <i className="pi pi-angle-right"/>
             <span>دوربین های ثبت تخلف</span>
