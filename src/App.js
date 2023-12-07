@@ -18,7 +18,7 @@ function App() {
         <div className="h-screen w-screen">
             {
                 user ? (
-                    <div className="flex h-full w-full">
+                    <div className="flex h-full w-full ">
                         <Sidebar/>
                         <div className="h-full w-full">
                             <Routes>

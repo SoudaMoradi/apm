@@ -15,11 +15,11 @@ import {Dropdown} from "primereact/dropdown";
 function ListEquipment(props) {
 
     const navigate = useNavigate();
-
     const [showDialog, setShowDialog] = useState(false);
     const [data, setData] = useState([
         {
             header: "ثبت تخلف محور اهواز -ایذه  کیلومتر9",
+
             tableData: [
                 {
                     id: 1,
@@ -143,8 +143,8 @@ function ListEquipment(props) {
                 }
             ]
         },
-    ]);
 
+    ]);
     const qrList = [
         {
             fileName: 'Qr.png',
@@ -192,18 +192,16 @@ function ListEquipment(props) {
 
 
     return (
-        <div className="w-full flex justify-content-center align-items-center h-full">
-            <div className="w-10">
-                <Accordion className="w-full bg-primary-200" multiple collapseIcon={' '} expandIcon={' '}>
+        <div className="w-full flex justify-content-center align-items-start h-full pt-5">
+            <div className="w-full" >
+                <Accordion className="w-full" multiple collapseIcon={' '} expandIcon={' '}>
                     {
                         data.map((d) => (
-                            <AccordionTab headerTemplate={<div
-                                className="flex justify-content-center align-items-center w-full gap-3">
-                                <span>{d.header}</span><span
-                                className="w-3rem bg-yellow-300 text-center text-lg border-round">{d.tableData.length}</span>
-                            </div>}>
+                            <AccordionTab headerTemplate={<div className="flex justify-content-center align-items-center w-full gap-5 bg-yellow-400 h-full p-2" style={{height:"0.09rem"}}>
+                                <span className="border-round-2xl text-center text-black-alpha-90">{d.header}</span><span
+                                className="w-3rem bg-white text-center text-lg border-round-2xl">{d.tableData.length}</span></div>}>
                                 <div className="w-full h-full">
-                                    <DataTable value={d.tableData}>
+                                    <DataTable  value={d.tableData}>
                                         <Column alignHeader={'center'} className="text-center" body={() => {
                                             return (
                                                 <div className="flex gap-2">
@@ -230,25 +228,23 @@ function ListEquipment(props) {
                                                 header="  شماره سریال "/>
                                         <Column alignHeader={'center'} className="text-center" field="contractor"
                                                 header="پیمانکار نگهداشت"/>
-                                        <Column alignHeader={'center'} className="text-center" field="status" header=" وضعیت" body={(item) => {return <div><Dropdown className="w-8rem" options={activeation} value={item.status}/></div>
+                                        <Column alignHeader={'center'} className="text-center font-bold" field="status" header=" وضعیت" body={(item) => {return <div><Dropdown className="w-6rem" style={{height:"2.4rem"}} options={activeation} value={item.status}/></div>
                                         }}/>
                                         <Column alignHeader={'center'} className="text-center" body={(item) => {
                                             return <div><ProgressBar value={item.health}/></div>
                                         }} header=" سلامت"/>
                                         <Column alignHeader={'center'} className="text-center" body={(item) => {
-                                            return <div><Button className="p-button-text text-green-600" label={'مشاهده جزییات'} onClick={()=>{setShowDialog(true)}}/></div>}}/>
+                                            return <div><Button className="p-button-text text-green-600 text-sm" label={'مشاهده جزییات'} onClick={()=>{setShowDialog(true)}}/></div>}}/>
                                     </DataTable>
                                 </div>
                             </AccordionTab>
-
                         ))
                     }
-
                 </Accordion>
             </div>
             <Dialog visible={showDialog} onHide={() => {setShowDialog(false)}} className="w-7 rtl" closable={false} showHeader={false}>
                 <div className="flex h-full">
-                    <div className="flex flex-column border-left-2  flex-1">
+                    <div className="flex flex-column border-left-2 flex-1">
                         <div className="border-bottom-3 flex flex-column justify-content-center align-items-center">
                             <img alt={'Qr.png'} src={process.env.PUBLIC_URL + "/assets/image/Qr.png"}
                                  className="w-6rem"/>
@@ -312,8 +308,7 @@ function ListEquipment(props) {
                                         <span className="flex-1 border-right-1 pr-2">دستگاه شماره یک</span>
                                     </div>
                                 </div>
-                                <div
-                                    className="w-4 w-18rem h-16rem flex justify-content-center align-items-center border-1">
+                                <div className="w-4 w-18rem h-16rem flex justify-content-center align-items-center border-1">
                                     <img alt={'map-iran.jpg'} className="w-full"
                                          src={assetImage.replace("{{IMAGE}}", "map-iran.jpg")}/>
                                 </div>

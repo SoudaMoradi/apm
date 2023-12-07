@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -66,4 +67,11 @@ body{
 }
 .p-accordion-content{
   padding:0;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link {
+   padding:unset;
+
+}
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+  margin-right:unset;
 }

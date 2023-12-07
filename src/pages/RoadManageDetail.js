@@ -53,9 +53,9 @@ function RoadManageDetail ({onClick,label}) {
     }
 
     function MenubarStart() {
-        return<div className="flex justify-content-start pr-3">
+        return<div className="flex justify-content-start align-items-center pr-3 text-xs">
             <span>خوزستان</span>
-            <i className="pi pi-angle-right"/>
+            <i className="pi pi-angle-left"/>
             <span>دوربین های ثبت تخلف</span>
         </div> ;
     }

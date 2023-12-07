@@ -4,6 +4,7 @@ import {Column} from "primereact/column";
 
 
 function Inpox(props) {
+
     const tableConent=[
         {
             id:1,
@@ -35,7 +36,7 @@ function Inpox(props) {
                     <Column alignHeader={'center'} className="text-center" field="date" header=" تاریخ دریافت"/>
                     <Column alignHeader={'center'} className="text-center" field="issue" header=" موضوع"/>
                     <Column alignHeader={'center'} className="text-center" field="receivedfrom" header="دریافت شده از"/>
-                    <Column alignHeader={'center'} className="text-center" field="attachment" header="پیوست " body={()=>{return <span><i className="pi pi-link" style={{'fontSize': '1.4em'}}/></span>}}/>
+                    <Column alignHeader={'center'} className="text-center" field="attachment" header="پیوست " body={()=>{return<span><i className="pi pi-link" style={{'fontSize': '1.4em'}}/></span>}}/>
                 </DataTable>
             </div>
     );
