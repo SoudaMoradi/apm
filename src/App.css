@@ -41,12 +41,12 @@
 
 
 .loginImage{
-  background-image: url("/public/assets/image/1046027.jpg")!important;
+  background-image: url("/public/assets/image/44 1.png")!important;
   background-repeat: no-repeat;
   background-size:100% auto;
   background-position-y:35%;
-  filter: blur(3px);
-  -webkit-filter: blur(4px);
+  /*filter: blur(3px);*/
+  /*-webkit-filter: blur(4px);*/
 }
 
 body{
