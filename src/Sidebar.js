@@ -18,8 +18,6 @@ function Sidebar(props) {
     const navigate=useNavigate();
     const [isExpanded,setExpanded]=useState(true);
     const location=useLocation();
-
-
     const menus=[
         {icon:"pi-check-square" ,title:"کارهای من",path:"/",isExpanded:true},
         {icon:"pi-sort-alt" ,title:"مدیریت راهها",path:"/roadmanagement",isExpanded:true},
@@ -49,6 +47,7 @@ function Sidebar(props) {
                 {menus.slice(7,12).map((m)=>{return<MenuItem active={location.pathname===m.path} isExpanded={isExpanded}  onClick={(e)=>{navigate(m.path); setExpanded(m.isExpanded)}} title={m.title} icon={m.icon}/>})}
 
             </div>
+
             <MenuItem title={'محسن کجباف'} iconLabel={'م ک'} isExpanded={isExpanded}/>
 
         </div>

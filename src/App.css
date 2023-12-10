@@ -75,3 +75,22 @@ body{
 .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
   margin-right:unset;
 }
+/*.p-datatable .p-datatable-thead > tr > th {*/
+/*  text-align: left;*/
+/*  padding: 1rem 1rem;*/
+/*  border:unset;*/
+/*  !* border-width: 0 0 1px 0; *!*/
+/*  font-weight: 700;*/
+/*  color: unset;*/
+/*  background: unset;*/
+/*  transition: box-shadow 0.2s;*/
+/*  */
+/*}*/
+.p-menubar {
+  padding: 0.5rem;
+  background: #f9fafb;
+  color: #4b5563;
+  border-bottom:unset;
+  border-top:unset;
+  border-radius: 6px;
+}

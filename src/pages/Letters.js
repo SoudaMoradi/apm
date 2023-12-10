@@ -23,21 +23,22 @@ function Letters(props) {
         {
             label: 'صندوق ورودی ',
             command: () => {setTab(`inpox`)},
-            className:`border-round font-bold text-sm ${tab==='inpox'&& 'bg-gray-300'}`
+            className:`border-round text-lg shadow-none ${tab==='inpox' && 'bg-orange-400'}`
+
         },
         {
             label: 'صندوق خروجی', command: () => {setTab(`outbox`)},
-            className:`border-round font-bold text-sm ${tab==='outbox'&& 'bg-gray-300'}`
+            className:`border-round shadow-none text-lg ${tab==='outbox'&& 'bg-orange-400'}`
         },
         {
             label: 'پاراف ها', command: () => {setTab(`initials`)},
-            className:`border-round font-bold text-sm ${tab==='initials'&& 'bg-gray-300'}`
+            className:`border-round shadow-none text-lg ${tab==='initials'&& 'bg-orange-400'}`
 
 
         },
         {
             label: 'پیام های آرشیو شده', command: () => {setTab(`archiveMessage`)},
-            className:`border-round font-bold text-sm ${tab==='archiveMessage'&& 'bg-gray-300'}`
+            className:`border-round shadow-none text-lg ${tab==='archiveMessage'&& 'bg-orange-400'}`
         },
     ]
 
@@ -60,18 +61,18 @@ function Letters(props) {
     return (
         <div className="flex h-full flex-column">
             <div className="flex h-full flex-column">
-                <div className="p-3"><span className="font-bold text-xl">کارتابل</span></div>
-
-                <Menubar className="flex justify-content-center w-full text-lg bg-transparent border-none font-medium bg-gray-200 pr-6"
-                         model={items}  end={<MenubarEnd/>}/>
-                <div className="w-full h-full">
+                <div className="flex justify-content-center">
+                    <span className="font-bold text-3xl p-3">کارتابل</span>
+                </div>
+                <Menubar className="flex justify-content-center w-full text-sm bg-transparent pr-6" model={items} end={<MenubarEnd/>}/>
+                <div className="w-full h-full text-lg">
                     {
                         tabContents[tab]
                     }
                 </div>
             </div>
-            <div className="border-top-1 border-gray-300 pr-3 pt-3 pb-3">
-                <Button className="p-button-success" onClick={()=>{setShowDialog(true)}} label={'ایجاد نامه جدید'} icon="pi pi-plus" iconPos="left" style={{width:"12rem"}}/>
+            <div className="flex justify-content-end pb-4 pl-4">
+                <Button className="p-button-text text-white pl-5 text-lg" onClick={()=>{setShowDialog(true)}} label={'ایجاد نامه جدید'} icon="pi pi-plus-circle" size={'large'} iconPos="left" style={{width:"15rem",background:"#2F37FF",borderRadius:'15px'}}/>
             </div>
             <Dialog visible={showDialog} onHide={() => {setShowDialog(false)}} className="w-4 rtl" closable={false} showHeader={true}>
                 <div className="flex flex-column gap-3">
